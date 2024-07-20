@@ -1,5 +1,4 @@
 {
-  "proxmoxHost": "https://your-proxmox-server:8006",
-  "username": "your-username@pam",
-  "password": "your-password"
+    "proxmoxHost": "https://your-proxmox-server:8006",
+    "apiToken": "your-api-token"
 }
