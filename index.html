@@ -51,22 +51,18 @@ ______ _          _ _____
       </nav>
     
       <div class="content">
-        <div class="description-intro">
-          <b>
-            <h2>Pourquoi choisir Pixel Server ?</h2>
-            <p>
-              Pixel Server est une jeune entreprise fondée en 2024, engagée dans des pratiques éco-responsables.<br>
-                Nous nous engageons à utiliser exclusivement des serveurs reconditionnés.<br> Et tout ça ,sans compromettre la stabilité et la fiabilité de nos services !
-              </p>
-          </b>
-        </div>
-          <img class="image-serveur" src="Serveurs.png" alt="img serv" >
-      </div>
-    <span class="flex-container-why">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-    </span>
+        <b>
+        <h2 class="title">Pourquoi choisir Pixel Server ?</h2>
+        <p class="p1">Pixel Server est une jeune entreprise fondée en 2024, engagée dans des pratiques éco-responsables.<br/>
+            Nous nous engageons à utiliser exclusivement des serveurs reconditionnés, sans compromettre la stabilité et la fiabilité de nos services.</p>
+        <span class="flex-container-why">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </span>
+    </b>
+    <img class="image-serveur" src="Serveurs.png" alt="img serv" >
+
     <h1>Join our Discord Server</h1>
 
 
@@ -228,6 +224,19 @@ nav.sidenav {
 }
 }
 
+.image-serveur {
+position: relative;
+top: -100px; 
+left: 900px;
+width: 30%;
+}
+
+.p1 {
+font-size: larger;
+border: 2px solid #160202;
+border-radius: 5px;
+
+}
 .flex-container-why {
 display: flex;
 background-color: DodgerBlue;
@@ -243,22 +252,4 @@ font-size: 30px;
 .title {
 font-size: 32px;
 }
-
-.image-serveur {
-  position: relative;
-  top: -150px; 
-  left: 950px;
-  width: 30%;
-}
-
-.description-intro {
-  position: relative;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: cursive;
-  top: 180px; 
-  left: 40px;
-  width: 50%;
-}
-
 </style>
