@@ -1,124 +1,125 @@
 /* Réinitialisation des marges pour le body */
 body {
-margin: 0;
-}
-
-/* Styles pour le menu de navigation latéral */
-nav.sidenav {
-list-style-type: none;
-margin: 0;
-padding: 0;
-width: 100%;
-background-color: #f1f1f1;
-overflow: hidden;
-display: flex;
-align-items: center;
-position: fixed;
-top: 0;
-z-index: 1;
-}
-
-/* Conteneur pour les éléments alignés à gauche */
-nav.sidenav .left {
-margin-right: auto; /* Aligne les éléments à gauche */
-display: flex;
-}
-
-/* Conteneur pour les éléments alignés à droite */
-nav.sidenav .right {
-margin-left: auto; /* Aligne les éléments à droite */
-display: flex;
-}
-
-/* Styles pour les liens dans le menu de navigation */
-nav.sidenav a {
-display: block;
-color: #000;
-padding: 14px 16px;
-text-decoration: none;
-}
-
-/* Style pour le lien actif */
-nav.sidenav a.active {
-background-color: #4CAF50;
-color: white;
-}
-
-/* Styles pour les liens au survol */
-nav.sidenav a:hover:not(.active) {
-background-color: #555;
-color: white;
-}
-
-/* Styles pour le contenu principal */
-div.content {
-padding: 60px 16px;
-height: 1000px; /* Hauteur d'exemple, peut être ajustée */
-}
-
-/* Icône du menu (pour petits écrans) */
-.menu-icon {
-display: none; /* Cachée par défaut */
-font-size: 30px;
-margin: 10px;
-cursor: pointer;
-position: absolute;
-left: 10px;
-top: 15px;
-}
-
-/* Overlay de fond (pour petits écrans) */
-.overlay {
-display: none; /* Caché par défaut */
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0,0,0,0.5);
-z-index: 1;
-}
-
-/* Styles pour les écrans avec une largeur maximale de 900px */
-@media screen and (max-width: 900px) {
-nav.sidenav {
-    width: 250px;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+    margin: 0;
+  }
+  
+  /* Styles pour le menu de navigation latéral */
+  nav.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
-    left: -250px;
-    transition: 0.3s;
-}
-
-nav.sidenav .left, nav.sidenav .right {
+    z-index: 1;
+  }
+  
+  /* Conteneur pour les éléments alignés à gauche */
+  nav.sidenav .left {
+    margin-right: auto; /* Aligne les éléments à gauche */
+    display: flex;
+  }
+  
+  /* Conteneur pour les éléments alignés à droite */
+  nav.sidenav .right {
+    margin-left: auto; /* Aligne les éléments à droite */
+    display: flex;
+  }
+  
+  /* Styles pour les liens dans le menu de navigation */
+  nav.sidenav a {
     display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Style pour le lien actif */
+  nav.sidenav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Styles pour les liens au survol */
+  nav.sidenav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Styles pour le contenu principal */
+  div.content {
+    padding: 60px 16px;
+    height: 1000px; /* Hauteur d'exemple, peut être ajustée */
+  }
+  
+  /* Icône du menu (pour petits écrans) */
+  .menu-icon {
+    display: none; /* Cachée par défaut */
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+  }
+  
+  /* Overlay de fond (pour petits écrans) */
+  .overlay {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0; /* Enlever les marges */
-}
-
-nav.sidenav a {
-    padding: 15px;
-    text-align: left;
-}
-
-nav.sidenav.active {
-    left: 0; /* Affiche le menu latéral */
-}
-
-.menu-icon {
-    display: block; /* Affiche l'icône du menu */
-}
-
-.overlay.active {
-    display: block; /* Affiche l'overlay */
-}
-}
-
-/* Styles pour les écrans avec une largeur maximale de 400px */
-@media screen and (max-width: 400px) {
-nav.sidenav a {
-    text-align: center; /* Centre le texte pour les petits écrans */
-}
-}
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
+  /* Styles pour les écrans avec une largeur maximale de 900px */
+  @media screen and (max-width: 900px) {
+    nav.sidenav {
+      width: 250px;
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      transition: 0.3s;
+    }
+  
+    nav.sidenav .left, nav.sidenav .right {
+      display: block;
+      width: 100%;
+      margin: 0; /* Enlever les marges */
+    }
+  
+    nav.sidenav a {
+      padding: 15px;
+      text-align: left;
+    }
+  
+    nav.sidenav.active {
+      left: 0; /* Affiche le menu latéral */
+    }
+  
+    .menu-icon {
+      display: block; /* Affiche l'icône du menu */
+    }
+  
+    .overlay.active {
+      display: block; /* Affiche l'overlay */
+    }
+  }
+  
+  /* Styles pour les écrans avec une largeur maximale de 400px */
+  @media screen and (max-width: 400px) {
+    nav.sidenav a {
+      text-align: center; /* Centre le texte pour les petits écrans */
+    }
+  }
+  
