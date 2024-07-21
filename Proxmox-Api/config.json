@@ -1,0 +1,4 @@
+{
+    "proxmoxHost": "https://your-proxmox-server:8006",
+    "apiToken": "your-api-token"
+}

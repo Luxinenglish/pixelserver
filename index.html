@@ -3,49 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proxmox API Connection</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Proxmox API Connection</h1>
-    <script>
-        async function fetchConfig() {
-            const response = await fetch('config.json');
-            if (!response.ok) {
-                throw new Error('Could not fetch config.json');
-            }
-            return await response.json();
-        }
-
-        async function getNodes(config) {
-            const response = await fetch(`${config.proxmoxHost}/api2/json/nodes`, {
-                method: 'GET',
-                headers: {
-                    'Authorization': `PVEAPIToken=${config.apiToken}`
-                }
-            });
-
-            if (!response.ok) {
-                throw new Error(`Erreur lors de la récupération des nœuds: ${response.statusText}`);
-            }
-
-            const data = await response.json();
-            return data.data;
-        }
-
-        async function main() {
-            try {
-                const config = await fetchConfig();
-                console.log('Configuration chargée:', config);
-
-                const nodes = await getNodes(config);
-                console.log('Nœuds:', nodes);
-            } catch (error) {
-                console.error('Erreur:', error);
-            }
-        }
-
-        // Exécution du script principal
-        main();
-    </script>
+    
 </body>
 </html>
