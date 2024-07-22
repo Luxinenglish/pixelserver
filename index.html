@@ -1,0 +1,350 @@
+<!--
+
+______ _          _ _____                          
+| ___ (_)        | /  ___|                         
+| |_/ /___  _____| \ `--.  ___ _ ____   _____ _ __ 
+|  __/| \ \/ / _ \ |`--. \/ _ \ '__\ \ / / _ \ '__|
+| |   | |>  <  __/ /\__/ /  __/ |   \ V /  __/ |   
+\_|   |_/_/\_\___|_\____/ \___|_|    \_/ \___|_|   
+                                                   
+                                                   
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-PixelServer</title>
+    <!--GoogleFont-->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <!--LINK EMBED-->
+    <meta content="Embed Title" property="og:title" />
+<meta content="Site Description" property="og:description" />
+<meta content="https://pixelserver.fr" property="og:url" />
+<meta content="https://embed.com/embedimage.png" property="og:image" />
+<meta content="#43B581" data-react-helmet="true" name="theme-color" />
+
+
+<!--    <link rel="stylesheet" href="/css/style-index.css">-->
+</head>
+<body>
+
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <div class="overlay" onclick="toggleMenu()"></div>
+    
+    <nav class="sidenav">
+        <div class="left">
+          <a class="active" href="#home">
+            <img src="/img/black-logo.png" alt="PixelServer Logo" />
+          </a>
+        </div>
+        <div class="right">
+          <a href="#news">Game</a>
+          <a href="#contact">VPS</a>
+          <a href="#about">Espace Client</a>
+        </div>
+      </nav>
+    
+      <div class="content">
+        <b>
+        <h2 class="title">Pourquoi choisir Pixel Server ?</h2>
+        <p class="description-intro">Pixel Server est une jeune entreprise fondée en 2024,par des jeunes, et engagée dans des pratiques éco-responsables.<br/>
+            Nous nous engageons à utiliser exclusivement des serveurs reconditionnés, sans compromettre la stabilité et la fiabilité de nos services.</p>
+        </div>
+
+        <div class="unique-flex-container">
+            <div class="unique-box">
+              <img src="image1.jpg" alt="Image 1" class="unique-image">
+              <div class="unique-content">
+                <h2 class="unique-title">Support</h2>
+                <p class="unique-paragraph">Notre équipe de support dédiée est là pour vous aider, 24/7, offrant une assistance et une expertise inégalées quand vous en avez besoin.</p>
+              </div>
+            </div>
+            <div class="unique-box">
+              <img src="image2.jpg" alt="Image 2" class="unique-image">
+              <div class="unique-content">
+                <h2 class="unique-title">Support</h2>
+                <p class="unique-paragraph">Notre équipe de support dédiée est là pour vous aider, 24/7, offrant une assistance et une expertise inégalées quand vous en avez besoin.</p>
+              </div>
+            </div>
+            <div class="unique-box">
+              <img src="image3.jpg" alt="Image 3" class="unique-image">
+              <div class="unique-content">
+                <h2 class="unique-title">Support</h2>
+                <p class="unique-paragraph">Notre équipe de support dédiée est là pour vous aider, 24/7, offrant une assistance et une expertise inégalées quand vous en avez besoin.</p>
+              </div>
+            </div>  
+          </div>
+          
+    </b>
+    <img class="image-serveur" src="serveurs.png" alt="img serv" >
+
+    <h1>Rejoignez notre serveur Discord</h1>
+
+
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '1172246253216747572', // PixelServer
+            channel: '1242809012739903498' // #🍻┤taverne
+        })
+    </script>
+    </div>
+    
+    <script>
+    function toggleMenu() {
+      var sidenav = document.querySelector('nav.sidenav');
+      var overlay = document.querySelector('.overlay');
+      sidenav.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+    </script>
+</body>
+    
+</html>
+
+
+<!--LE CSS EN DESSOUS N'EST PAS DESTINER A Y RESTER-->
+
+
+
+<style>
+/* Réinitialisation des marges pour le body */
+body {
+margin: 0;
+}
+
+/* Styles pour le menu de navigation latéral */
+nav.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #5690FF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/* Conteneur pour les éléments alignés à gauche */
+nav.sidenav .left {
+    margin-right: auto; /* Aligne les éléments à gauche */
+    display: flex;
+}
+
+/* Conteneur pour les éléments alignés à droite */
+nav.sidenav .right {
+    margin-left: auto; /* Aligne les éléments à droite */
+    display: flex;
+}
+
+/* Styles pour les liens dans le menu de navigation */
+nav.sidenav a {
+display: block;
+color: #000;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Style pour le lien actif */
+nav.sidenav a.active {
+background-color: #5690FF;
+color: white;
+}
+
+/* Styles pour les liens au survol */
+nav.sidenav a:hover:not(.active) {
+background-color: #206eff;
+color: white;
+}
+
+/* Styles pour le contenu principal */
+div.content {
+padding: 60px 16px;
+height: 1000px; /* Hauteur d'exemple, peut être ajustée */
+}
+
+/* Icône du menu (pour petits écrans) */
+.menu-icon {
+display: none; /* Cachée par défaut */
+font-size: 30px;
+margin: 10px;
+cursor: pointer;
+position: absolute;
+left: 10px;
+top: 15px;
+}
+
+/* Overlay de fond (pour petits écrans) */
+.overlay {
+display: none; /* Caché par défaut */
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+z-index: 1;
+}
+
+/* Styles pour les écrans avec une largeur maximale de 900px */
+@media screen and (max-width: 900px) {
+nav.sidenav {
+    width: 250px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+}
+
+nav.sidenav .left, nav.sidenav .right {
+    display: block;
+    width: 100%;
+    margin: 0; /* Enlever les marges */
+}
+
+nav.sidenav a {
+    padding: 15px;
+    text-align: left;
+}
+
+nav.sidenav.active {
+    left: 0; /* Affiche le menu latéral */
+}
+
+.menu-icon {
+    display: block; /* Affiche l'icône du menu */
+}
+
+.overlay.active {
+    display: block; /* Affiche l'overlay */
+}
+}
+
+/* Styles pour les écrans avec une largeur maximale de 400px */
+@media screen and (max-width: 400px) {
+nav.sidenav a {
+    text-align: center; /* Centre le texte pour les petits écrans */
+}
+}
+
+/* Styles pour les écrans plus larges que 900px (PC) */
+@media screen and (min-width: 901px) {
+nav.sidenav {
+    box-shadow: 0 18.6px 18.6px -18.6px #0047FF; /* Ajoute une ombre portée avec un blur de 18.6px en bas */
+}
+}
+
+.image-serveur {
+position: relative;
+top: -100px; 
+left: 900px;
+width: 30%;
+}
+
+.description-intro {
+font-size: larger;
+border: 2px solid #160202;
+border-radius: 5px;
+
+}
+.flex-container-why {
+display: flex;
+background-color: DodgerBlue;
+}
+
+.flex-container-why > div {
+background-color: #f1f1f1;
+margin: 10px;
+padding: 20px;
+font-size: 30px;
+}
+
+.title {
+font-size: 32px;
+}
+
+
+.unique-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 2%;
+}
+
+.unique-flex-container > .unique-box {
+  background-color: #f1f1f1;
+  width: 456px;
+  height: 200px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 29px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.unique-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.unique-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.unique-title {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.unique-paragraph {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .unique-flex-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+}
+
+.unique-flex-container > .unique-box {
+    width: calc(100% - 4%);
+    height: auto;
+    margin: 10px 0;
+}
+
+.unique-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.unique-box {
+    flex-direction: column;
+    text-align: center;
+}
+}
+</style>
